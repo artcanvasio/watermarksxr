@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="WatermarksXR">
-<meta name="description" content="WatermarksXR — mixed reality souvenir of Augsburg’s water heritage. Interactive mobile prototype.">
+<meta name="description" content="WatermarksXR — a mixed reality souvenir of Augsburg’s water heritage. Scan the wheel, bring four landmarks to life.">
 <title>WatermarksXR</title>
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
@@ -25,13 +25,13 @@
     <div id="toast" role="status" hidden></div>
   </div>
   <aside id="aside" aria-label="About this prototype">
-    <p class="aside-eyebrow">Interactive prototype</p>
+    <p class="aside-eyebrow">Mobile experience</p>
     <h1>WatermarksXR</h1>
-    <p>Open this page on your phone to use the real camera. Point it at the landmark panels of the water-wheel souvenir, or use the prototype controls on the scan screen.</p>
+    <p>Open this page on your phone. Point the camera at a landmark drawing on the water-wheel souvenir and the landmark appears on top of it.</p>
     <p class="aside-url" id="aside-url"></p>
   </aside>
 </div>
-<script src="assets/lucide.min.js"></script>
-<script src="app.js"></script>
+<script src="vendor/lucide.min.js"></script>
+<script type="module" src="app.js"></script>
 </body>
 </html>
