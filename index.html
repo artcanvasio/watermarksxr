@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#123f43">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="WatermarksXR">
+<meta name="description" content="WatermarksXR — mixed reality souvenir of Augsburg’s water heritage. Interactive mobile prototype.">
+<title>WatermarksXR</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/icon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,400&display=swap">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div id="stage">
+  <div id="app" aria-live="polite">
+    <video id="cam" playsinline muted autoplay aria-hidden="true"></video>
+    <div id="screens"></div>
+    <div id="toast" role="status" hidden></div>
+  </div>
+  <aside id="aside" aria-label="About this prototype">
+    <p class="aside-eyebrow">Interactive prototype</p>
+    <h1>WatermarksXR</h1>
+    <p>Open this page on your phone to use the real camera. Point it at the landmark panels of the water-wheel souvenir, or use the prototype controls on the scan screen.</p>
+    <p class="aside-url" id="aside-url"></p>
+  </aside>
+</div>
+<script src="assets/lucide.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
